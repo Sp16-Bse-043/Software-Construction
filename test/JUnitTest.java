@@ -28,7 +28,7 @@ public class JUnitTest {
     
     @Test
     public void Addtest2() {
-        assertEquals("10 + 5 must be 15", 3, tester.Add(10, 5));
+        assertNotEquals("10 + 5 must be 15", 3, tester.Add(10, 5));
 
     }
 
@@ -41,6 +41,11 @@ public class JUnitTest {
     public void Subtraction() {
 
         assertEquals("10 - 5 must be 5", 5, tester.Sub(10, 5));
+    }
+     @Test
+    public void Subtraction2() {
+
+        assertNotEquals("10 - 5 must be 5", 10, tester.Sub(10, 5));
     }
 
     @Test

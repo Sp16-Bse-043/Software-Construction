@@ -31,9 +31,9 @@ public class JUnit {
        System.out.println("Addition of A/B="+result);
         return result;
       }
+        
       
     
-
     /**
      * @param args the command line arguments
      */
